@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedeas E-class</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+    <style>
+        
+    </style> -->
+
+
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <a href="#"><img src="../merc logo2.png" class="logo"> </a>
+            <ul class="navigation">
+                <li><a href="#">Top Features</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>Elegance At Its <span>Best</span></h2>
+            <a href="#" class="btn">Test Drive</a>
+            <img src="../merc_final-transformed.png" class="photu">
+
+        </div>
+
+        <div class="slider">
+            <div class="slides active">
+                <h2>
+                    <span>Engine</span><br>1950cc-2925cc cc
+                </h2>
+                <h2>
+                    <span>Max Speed</span><br>268 Kmph
+                </h2>
+            </div>
+            <div class="slides">
+                <h2>
+                    <span>Mileage</span><br>16.1 kmpl
+                </h2>
+                <h2>
+                    <span>0-100 Kmph</span><br>6.1 seconds
+                </h2>
+            </div>
+            <div class="slides">
+                <h2>
+                    <span>Power</span><br>191.76-281.61 Bhp
+                </h2>
+                <h2>
+                    <span>Bootspace</span><br>540 Liters
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="imageslider">
+
+        <div class="imageslides">
+            <img id="img-1" src="../slide 7.jpg" alt="Image 1" />
+            <img id="img-2" src="../Image1_8.avif" alt="Image 2" />
+            <img id="img-3" src="../slide 10.jpg" alt="Image 3" />
+            <!-- <img id="img-4" src="slide 8.webp" alt="Image 4" />
+            <img id="img-5" src="slide 10.jpg" alt="Image 5" />
+            <img id="img-6" src="slide 4.webp" alt="Image 6" />  -->
+        </div>
+        <div class="nav-buttons">
+            <span class="bindu operational" onclick="changeSlide(0)"></span>
+            <span class="bindu" onclick="changeSlide(1)"></span>
+            <span class="bindu" onclick="changeSlide(2)"></span>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const slides = document.querySelectorAll('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        function setActive(i) {
+            for (slide of slides)
+                slide.classList.remove('active');
+            slides[i].classList.add('active');
+            for (dot of dots)
+                dot.classList.remove('active');
+            dots[i].classList.add('active');
+        }
+        for (let j = 0; j < dots.length; j++) {
+
+            dots[j].addEventListener('click', function () {
+                setActive(j);
+
+            })
+
+        }
+    </script>
+
+
+    <script>
+        var imgs = document.querySelectorAll('.imageslider img');
+        var bindus = document.querySelectorAll('.bindu');
+        var currentImg = 0; // index of the first image 
+        const interval = 3000; // duration(speed) of the slide
+        function changeSlide(n) {
+            for (var i = 0; i < imgs.length; i++) { // reset
+                imgs[i].style.opacity = 0;
+                dots[i].className = dots[i].className.replace(' operational', '');
+            }
+
+            currentImg = n;
+
+            imgs[currentImg].style.opacity = 1;
+            bindus[currentImg].className += ' operational';
+        }
+
+        // var timer = setInterval(changeSlide, interval);
+        // currentImg = (currentImg + 1) % imgs.length; // update the index number
+
+        // if (n != undefined) {
+        //     clearInterval(timer);
+        //     timer = setInterval(changeSlide, interval);
+        //     currentImg = n;
+        // }
+
+    </script>
+
+
+</body>
+
+</html>
