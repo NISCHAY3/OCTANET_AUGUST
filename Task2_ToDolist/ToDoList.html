@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' type='text/css' media="screen" href="ToDoList.css" />
+    <title>Todo List App</title>
+</head>
+
+<body>
+    <!-- <div class="logo">
+        <img src="Screenshot 2023-08-08 170210.png" alt="">
+    </div> -->
+    <header id="header">
+        <div class="header-content-div"><a href="#home-sec"><img src="../Task2_ToDolist/Screenshot 2023-08-08 170210.png"
+                    alt="Company Logo" id="header-img" /></a>
+            <!-- <nav id="nav-bar"><a href="#about" class="nav-link">ABOUT</a><a href="#varieties"
+                    class="nav-link">VARIETIES</a><a href="#our-service" class="nav-link">OUR SERVICE</a><a
+                    href="#benefits" class="nav-link">BENEFITS</a></nav> -->
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="task-input">
+            <ion-icon name="create-outline"></ion-icon>
+            <input type="text" placeholder="Add a New Task + Enter" />
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+    <script src="ToDoList.js"></script>
+</body>
+
+</html>
