@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbb517;
+
+}
+
+#header {
+    height: 96px;
+    font-family: "Montserrat", sans-serif;
+    width: 1170px;
+    background-color: #ffe600;
+    padding: 1rem 0;
+    position: sticky;
+    z-index: 99;
+    left: 200px;
+
+    margin-top: 20px;
+
+}
+
+.header-content-div {
+    max-width: 95rem;
+    width: auto;
+    margin: 0 auto;
+
+}
+
+
+#header-img {
+    height: 92px;
+    width: 92px;
+}
+
+nav {
+    position: relative;
+    top: 3rem;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+
+    transition: 0.3s;
+    padding: 8px 13px;
+
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #da291c;
+    border: 1px;
+    border-radius: 30px;
+}
+
+.nav-link:active {
+    color: #da291c;
+}
+
+.to-language {
+    text-decoration: none;
+    color: #000000;
+
+    border: 1.5px #000000;
+
+}
+
+.to-language:hover {
+    background-color: #da291c;
+
+}
+
+.src-icon:hover {
+    color: #000000;
+    background-color: #ffe600;
+    border: none;
+
+}
+
+.cover img {
+    width: 1170px;
+    height: 425px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.product-container {
+    width: 1170px;
+    margin-top: 20px;
+    margin-left: 200px;
+    height: 712px;
+    background-image: url(Lays\ bg\ products.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.product-container h1 {
+    font-size: 95px;
+    font-weight: 900;
+    color: #fff;
+    padding: 40px;
+    margin-top: 0;
+    margin-left: 45px;
+
+}
+
+.pdt-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.column {
+    width: 332px;
+    height: 482px;
+
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.column img {
+    transition: 0.3s ease all;
+    transform-origin: center center;
+    transform: scale(0.9990);
+
+}
+
+.column img:hover {
+    transform: scale(1.02);
+
+}
+
+.one {
+    background-color: #383a6f;
+}
+
+.two {
+    background-color: #336b3e;
+}
+
+.three {
+    background-color: #0094bc;
+}
+
+.one img {
+    width: 332px;
+    height: 347px;
+
+}
+
+.two img {
+    width: 332px;
+    height: 347px;
+
+}
+
+.three img {
+    width: 332px;
+    height: 347px;
+
+}
+
+.dips {
+    background-color: #383a6f;
+}
+
+.lays {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 0;
+
+}
+
+.description h2,
+h3,
+.button {
+    margin-left: 10px;
+
+}
+
+.description h3 {
+    font-size: 25px;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.kettle-cooked {
+    background-color: #336b3e;
+}
+
+.poppables {
+    background-color: #0094bc;
+
+}
+
+.button {
+    text-align: center;
+    background-color: #da291c;
+    font-size: 15px;
+    transition: background-color .3s ease, color .3s ease;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    padding: 11px 25px;
+    margin-top: -70px;
+    color: #fff;
+    margin-bottom: 25px;
+
+}
+
+.receipes-container {
+    width: 1170px;
+    height: 720px;
+    margin-top: 20px;
+    margin-left: 200px;
+    background-image: url(lays\ bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.receipes-container H1 {
+    font-size: 95px;
+    font-weight: 900;
+    color: #fff;
+    padding: 40px;
+    margin-top: 0;
+    margin-left: 9px;
+
+}
+
+.receipes-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+
+
+}
+
+.columnR {
+
+    margin-top: -80px;
+    width: 314px;
+    height: 456px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe600;
+
+
+}
+
+.receipe-title {
+    font-size: 27px;
+    line-height: 25px;
+    max-height: 50px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 2;
+}
+
+.btn {
+    padding: 11px 25px;
+}
+
+.recipe-2 {
+    font-size: 29px;
+}
+
+section {
+    position: relative;
+    width: 1170px;
+    height: 790px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 67, 34);
+    margin-left: 200px;
+    margin-top: 20px;
+    background-image: url(WAVY\ BG.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+
+.wavy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+}
+
+header .logo {
+    position: relative;
+    width: 92px;
+    height: 92px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 5em;
+    line-height: 1.4em;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.content .textBox h2 span {
+    color: #860A15;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.content .textBox h3 {
+    color: #333;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    margin-top: 0;
+}
+
+.content .imgBox img {
+    width: 530px;
+    margin-top: -30px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 80px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00A06C;
+    clip-path: circle(600px at right 800px);
+}
+
+.get-social {
+    width: 1170px;
+    height: 790px;
+    background-image: url(get\ social\ bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.get-social H1 {
+    align-self: flex-start;
+    font-size: 95px;
+    color: #fff;
+    margin-left: 45px;
+    margin-top: 9px;
+}
+
+.get-social img {
+    width: 1010px;
+    height: 600px;
+    margin-top: -50px;
+}
+
+.contact-us {
+    width: 1170px;
+    height: 174px;
+    background-image: url(bg-contactus-en.webp);
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+
+
+}
+
+.icons {
+    padding-right: 92px;
+}
+
+
+
+.icons a i {
+
+    font-size: 68px;
+    margin-left: 10px;
+    margin-right: 64px;
+    transition: 0.3 ease all;
+    /* margin-right: 92px; */
+}
+
+.icons a i:hover {
+    transform: scale(1.1);
+}
+
+.last-list {
+    width: 1170px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 25px; */
+
+}
+
+.last-list a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    color: #000000;
+}
+
+.last-list a:hover {
+    background-color: #ee3124;
+    color: #fff;
+}
+
+.logo-last {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-last img {
+    width: 92px;
+    height: 92px;
+    align-content: center;
+}
